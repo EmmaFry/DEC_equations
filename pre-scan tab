@@ -1,0 +1,1 @@
+=or(if(and(I200<>"N/A", I200<>"Before 1/7/2022"), "TRUE", if(G200="Andrews Chapel", "FALSE", if(and(vlookup(C200, REF!$U$2:$V,2,FALSE) < M200, G200="Andrews Chapel"), "FALSE", if(and(C200="NVR-Ryan Homes", G200<>"Courtney Creek"), "FALSE", if(vlookup(C200, REF!$U$2:$V,2,FALSE) < M200, "TRUE", "FALSE"))))))
