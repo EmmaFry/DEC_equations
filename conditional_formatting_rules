@@ -1,0 +1,13 @@
+/* 
+condtional formatting we don't use anymore for DEC, highlights approved DEC builders green so we know which builders are eligible
+it's easier to rely on the permit dates and inspection date + 60 days conditions
+
+Apply to Range: B3:B1161
+
+Format Rules:
+Custom formula is
+=VLOOKUP($B3,INDIRECT("'REF'!$G$2:$G$1000"),1, FALSE)=$B3
+
+Formatting Style
+Default green
+*/
